@@ -1,4 +1,4 @@
-html,main {
+html, main {
     background-color: darkslategray;
     height: 100%;
 }
@@ -60,9 +60,10 @@ img{
     transition: 0.5s;
 }
 
-.right:hover{
+.right:hover {
     background-color: blue;
 }
+
 .left:hover {
     background-color: red;
 }
@@ -98,4 +99,10 @@ img{
         inset 0 -2px 6px rgba(0,0,0,0.4);
     position: relative;
     overflow: hidden;
+}
+
+#txtG, #txtD {
+    text-align: center;
+    font-weight: bold;
+    color:white;
 }
