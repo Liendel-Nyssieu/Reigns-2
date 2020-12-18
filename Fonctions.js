@@ -6,19 +6,12 @@ function Ajout(list_cartes,nouvelle){
     }   
 }
 
+
 function Supp(list_cartes,bye){
     var index = list_cartes.indexOf(bye);
     if (index > -1) {
         list_cartes.splice(index, 1);
     } 
-}
-
-function Active_Effets (cartes_select){
-    alert("Carte obtenue : " + ` ${cartes_select.getname()}`);
-    if (confirm(`${cartes_select.getdescriptifs()} \n OK = ${cartes_select.getactionD()} \n  Annuler = ${cartes_select.getactionG()}`)) {
-        cartes_select.enclencheEffetsD();
-    }
-    else {cartes_select.enclencheEffetsG();}
 }
 
 // piochons une carte au hasard parmis les cartes valides
@@ -75,3 +68,4 @@ const ReligionPASContent = function() {
     console.log("La religion est contente");
     jaugeReligion --;
 }
+
