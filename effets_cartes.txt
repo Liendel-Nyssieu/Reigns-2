@@ -1,0 +1,22 @@
+Pour les effets sur les barres des pouvoirs politiques, j'ai fait un système de trois variations différentes possibles : "faible baisse/augmentation, baisse/augmentation et forte baisse/augmentation. Pour les réaliser, on n'aura qu'à appeler 1, 2 et 3 fois la fonction de modification de la barre.
+
+game_over (quelle que soit la raison) : les deux choix sont "..." et il n'y a pas d'effet (sauf la fin de la partie). Si trop galère/chiant, on peut aussi ne pas mettre de choix sur cette carte (puisqu'il s'agit de la fin du jeu).
+
+incident_bandits :	-"envoyer l'armée" (légère augmentation de la barre de peuple mais forte baisse de la barre d'armée)
+			-"ne rien faire" (baisse des barres de peuple et de finances)
+			
+recolte_bonne :	-"nourrir le peuple" (augmentation de la barre de peuple)
+			-"garder les récoltes pour soi" (augmentation de la barre des finances)
+			
+recolte_mauvaise :	-"nourrir le peuple" (baisse de la barre des finances et de la barre d'armée)
+			-"nourrir la garde" (baisse de la barre des finances et de la barre de peuple)
+			
+potion_1 :	-"potion jaune" (fait progresser le compteur d'années de 50 ans, afficher le message "vous sentez le temps s'accélérer et 			vous vous retrouvez 50 ans dans le futur")
+		-"potion rose" (permet de voir pendant 10 tours la valeur exacte de cacune des barres de pouvoir politique, afficher le 			message "Vous devenez temporairement clairvoyants et connaissez à tout isntant l'état e chacun des pouvoirs politques.")
+		
+potion_2 :	-"leader charismarique" (augmentation de la barre de peuple)
+		-"force surhumaine" (augmentation de la barre d'armée)
+		
+potion_3 :	-"potion bleue" (transforme en chien, afficher le message "Woof ! Vous êtes mintenant un chien. Vous ne pouvez plus vous 			exprimer corrèctement")
+		-"potion rouge" (supprime le risque de mourir de vieillesse.
+	
