@@ -5,12 +5,29 @@
     <link rel="stylesheet" href="style.css">
     <script onload type='text/javascript' src='Fonctions.js'></script>
     <script onload type='text/javascript' src='Cartes.js'></script>
-    <script defer type='text/javascript' src='Boucle de jeu.js'></script> 
+    <script onload type='text/javascript' src='Boucle de jeu.js'></script>
     <title>Reigns 2</title>
 </head>
 <body>
 <main>
     <div class="container">
+        <div class="meter-container">
+            <div class="meter">
+                <div class="progress" id="religion"></div>
+            </div>
+            <div class="meter">
+                <div class="progress" id="army"></div>
+            </div>
+            <div class="meter">
+                <div class="progress" id="population"></div>
+            </div>
+            <div class="meter">
+                <div class="progress" id="bank"></div>
+            </div>
+        </div>
+        <div class="titre">
+            <h2>Titre de l'image</h2>
+        </div>
         <div class="item">
             <div class="image-container">
                 <img src="Famous-people-minimalism-04.jpg" alt="che image">
@@ -18,8 +35,8 @@
                 <button class="right"><p id="txtD"></p></button>
             </div>
         </div>
-        <div class="meter">
-            <span style="width: 25%"></span>
+        <div class="container-description">
+            <h2>Description de l'image</h2>
         </div>
     </div>
 </main>
