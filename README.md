@@ -6,4 +6,4 @@ A faire:
     - Créer les jauges
     - Créer barre de vie
     - Shadow box et boutton avec texte ==> liendel
-    - Créer div pour le texte au-dessus du l'image
+    - Créer div pour le texte au-dessus et en-dessous du l'image
