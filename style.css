@@ -57,6 +57,7 @@ img{
     cursor: pointer;
     text-align: center;
     outline: none;
+    color: transparent;
 }
 .right{
     position: absolute;
@@ -73,15 +74,18 @@ img{
     cursor: pointer;
     text-align: center;
     outline: none;
+    color: transparent;
 }
 
 .right:hover{
     background-color: blue;
     box-shadow: -150px 0px blue;
+    color: white;
 }
 .left:hover {
     background-color: red;
     box-shadow: 150px 0px red;
+    color: white;
 }
 
 .meter {
