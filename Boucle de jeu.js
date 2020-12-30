@@ -1,35 +1,32 @@
-let jaugeBanque = 20;
-let jaugePeuple = 10;
-let jaugeReligion = 24;
-let jaugeArmee = 17;
-let ageJoueur = 50;
+//Initialisation après chargement du DOM : HYPER IMPORTANT
+document.addEventListener("DOMContentLoaded", function() {
 
-let tour_en_cours = 0;
-const tour_max = 1;
-while (tour_en_cours < tour_max) {
-    const carteChoisie = piocher(cartes_jouables);
-    alert("Carte obtenue : " + ` ${carteChoisie.getname()}`);
-    let finish = false; // Le joueur n'a pas encore appuyé sur un bouton
-    
-    changeButtonTxt(carteChoisie);
+    let tour_en_cours = 0;
+    let tour_fin = 5;
 
-    d = document.getElementsByClassName("right"); // ByClassName renvoie une liste avec un seul élément d'où le g[0]
-    g = document.getElementsByClassName("left");
+    function jouer(tour){
+        if ((tour>=tour_fin) || (jaugeBanque==0) || (jaugeBanque==100) || (jaugeArmee==0) || (jaugeArmee==100) || (jaugePeuple==0) || (jaugePeuple==100) || (jaugeReligion==0) || (jaugeReligion==100)){
+            console.log("FIN DU JEU")
+        } else {
+            console.log("tour en cours =",tour);
+            carteChoisie = piocher(cartes_jouables);
+            console.log(carteChoisie.getname());
+            changeCarte(carteChoisie);
 
-    d[0].addEventListener("click", function() {
-        carteChoisie.enclencheEffetsD();
-    });
-    
-    g[0].addEventListener("click", function() {
-        carteChoisie.enclencheEffetsG();
-    });
-    tour_en_cours ++;
-}
+            d = document.getElementsByClassName("right"); // ByClassName renvoie une liste avec un seul élément d'où le g[0]
+            g = document.getElementsByClassName("left");
 
-function changeButtonTxt(carte) {
-    d = document.getElementById("txtD");  // On trouve p
-    g = document.getElementById("txtG");
-    d.innerText = carte.getactionD();    // On modifie p
-    g.innerText = carte.getactionG();
-}
+            d[0].addEventListener("click",function() {
+                carteChoisie.enclencheEffetsD();
+                jouer(tour+1);
+            });
 
+            g[0].addEventListener("click",function() {
+                carteChoisie.enclencheEffetsG();
+                jouer(tour+1);
+            });
+        }   
+    } 
+    jouer(0)
+
+});
