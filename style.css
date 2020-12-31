@@ -122,3 +122,22 @@ img{
     height: 95%;
     background-color: green;
 }
+
+
+.container-description{
+    max-width: 50%;
+
+}
+
+.titre-text{
+    color: white;
+    font-style: italic;
+}
+
+.description-text{
+    color : white;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-variant: small-caps;
+    font-style: oblique;
+}
