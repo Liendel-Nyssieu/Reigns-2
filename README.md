@@ -3,4 +3,5 @@ Projet de prog WEB
 
 A faire:
   - HTML/CSS:
-    - Animations de transition?
+    - Modif shadows box noir almost full size image
+    - augmenter taille des jauges
