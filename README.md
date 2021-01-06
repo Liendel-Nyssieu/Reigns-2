@@ -3,5 +3,6 @@ Projet de prog WEB
 
 A faire:
   - HTML/CSS:
-    - Aligner les jauges
-    - Mettre une background image sympa
+    - Modif shadow box for full size on image
+    - augmenter taille des jauges
+    - Color white for text
