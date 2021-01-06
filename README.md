@@ -3,4 +3,5 @@ Projet de prog WEB
 
 A faire:
   - HTML/CSS:
-    - Animations de transition?
+    - Aligner les jauges
+    - Mettre une background image sympa
