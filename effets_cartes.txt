@@ -1,0 +1,81 @@
+Pour les effets sur les barres des pouvoirs politiques, j'ai fait un système de trois variations différentes possibles : "faible baisse/augmentation, baisse/augmentation et forte baisse/augmentation. Pour les réaliser, on n'aura qu'à appeler 1, 2 et 3 fois la fonction de modification de la barre.
+
+game_over (quelle que soit la raison) : les deux choix sont "..." et il n'y a pas d'effet (sauf la fin de la partie). Si trop galère/chiant, on peut aussi ne pas mettre de choix sur cette carte (puisqu'il s'agit de la fin du jeu).
+
+incident_bandits :	-"Envoyer l'armée" (légère augmentation de la barre de peuple mais forte baisse de la barre d'armée)
+			-"Ne rien faire" (baisse des barres de peuple et de finances)
+			
+recolte_bonne :	-"Nourrir le peuple" (augmentation de la barre de peuple)
+			-"Garder les récoltes pour soi" (augmentation de la barre des finances)
+			
+recolte_mauvaise :	-"Nourrir le peuple" (baisse de la barre des finances et de la barre d'armée)
+			-"Nourrir la garde" (baisse de la barre des finances et de la barre de peuple)
+			
+potion_1 :	-"Potion jaune" (fait progresser le compteur d'années de 50 ans, afficher le message "vous sentez le temps s'accélérer et 			vous vous retrouvez 50 ans dans le futur")
+		-"Potion rose" (permet de voir pendant 10 tours la valeur exacte de cacune des barres de pouvoir politique, afficher le 			message "Vous devenez temporairement clairvoyants et connaissez à tout isntant l'état e chacun des pouvoirs politques.")
+		
+potion_2 :	-"Leader charismarique" (augmentation de la barre de peuple)
+		-"Force surhumaine" (augmentation de la barre d'armée)
+		
+potion_3 :	-"Potion bleue" (transforme en chien, afficher le message "Woof ! Vous êtes mintenant un chien. Vous ne pouvez plus vous 			exprimer corrèctement")
+		-"Potion rouge" (supprime le risque de mourir de vieillesse.
+
+guerre :	-"Déclarer la guerre" (forte baisse de la barre d'armée mais légère augmentation de la barre de peuple)
+		-"Parlementer" (baisse de la barre des finances)
+		
+chasse :	-"Inviter le peuple" (augmentation de la barre de peuple)
+		-"Inviter la bourgeoisie étrangère" (augmentation de la barre des finances)
+		
+dragon :	-"Demander l'aide de l'Eglise" (augmentation de la barre de religion mais légère baisse de la barre de peuple)
+		-"Envoyer l'armée" (augmentation de la barre de peuple, légère augmentation de la barre d'armée, mais baisse de la barre 			de religion)
+		
+investissement_1 :	-"Investir" (légère augmentation de la barre des finances et augmentation de la barre de peuple, mais forte baisse de la barre de religion)
+			-"Ne rien faire" (légère baisse de la barre de peuple, légère baisse de la barre des finances, mais augmentation de la barre de religion)
+			
+peche :	-"Partir pêcher" (augmentation de la barre de peuple et légère baisse de la barre des finances)
+		-"Laisser le peuple travailler" (Augmentation de la barre des finances et légère baisse de la barre de peuple)
+		
+relique :	-"Laisser l'Eglise s'en charger" (forte augmentation de la barre de religion mais forte baisse de la barre des finances)
+		-"Tout organiser" (légère baisse des barres de religion et des finances)
+		
+troubadour :	-"Accepter sa proposition" (legère augmentation des barres des finances et de peuple)
+		-"Lui laisser l'intégralité de ses recettes" (augmentation de la barre de peuple)
+		
+trahison_general :	-"Exécuter les traîtres" (forte baisse de la barre d'armée)
+			-"Envoyer le général à la guerre dans une contrée lointaine" (légère baisse de la barre de finances, légère 			augmentation de la barre d'armée)
+			
+voleur :	-"Emprisonner Borin des Forêts" (forte baisse de la barre de peuple mais augmentation de la barre de religion)
+		-"relâcher le Borin des Forêts" (Forte baisse de la barre de religion mais forte augmentation de la barre de peuple)
+		
+barbares :	-"Protéger les prêtres" (forte augmentation de la barre de religion mais baisse de la barre d'armée)
+		-"Ignorer leur problème" (forte baisse de la barre de religion)
+		
+joutes :	-"Organiser les joutes" (augmentation de la barre de peuple mais baisse de la barre des finances)
+		-"Ne rien organiser" (légère baisse de la barre de peuple mais augmentation de la barre des finances)
+		
+gisement :	-"Créer de la monnaie (augmentation de la barre des finances)
+		-"Créer des armes et de l'équipement" (augmentation de la barre d'armée)
+		
+académie magie :	-"Construire l'académie" (faible augmentation de la barre de peuple et des finances mais baisse de la barre de religon)
+			-"Ne rien construire" (faible augmentation de la barre de religion mais faible baisse de la barre des finances)
+			
+banque :	-"Construire la banque" (augmentation de la barre des finances mais légère baisse de la barre de peuple)
+		-"Ne rien construire" (faible augmentation de la barre de peuple)
+
+cachots :	-"Construire les cachots" (augmentation de la barre d'armée mais baisse de la barre de peuple)
+		-"Ne rien construire" (baisse de la barre d'armée)
+		
+caserne :	-"Construire une caserne" (forte augmentation de la barre d'armée mais faible baisse de la barre des finances et de peuple)
+		-"Ne rien construire" (baisse de la barre d'armée)
+		
+cathédrale :	-"Construire la cathédrale" (forte augmentation de la barre de religion mais forte baisse de la barre des finances)
+		-"Ne rien construire" (baisse de la barre de religion)
+		
+grenier :	-"Construire un grenier" (augmentation de la barre de peuple mais faible baisse de la barre des finances)
+		-"Ne rien construire" (faible baisse de la barre de peuple)
+		
+taverne :	-"Construire une taverne" (augmentation de la barre de peuple, faible augmentation de la barre des finances mais baisse de la barre de religion)
+		-"Ne rien construire" (baisse de la barre de peuple)
+		
+tour de guet :	-"Construire une tour de guet" (augmentation de la barre d'armée mais baisse de la barre des finances)
+		-"Ne rien construire" (baisse de la barre d'armée)
