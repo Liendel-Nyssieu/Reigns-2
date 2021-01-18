@@ -58,12 +58,12 @@ carte.prototype.recupimage = function(){
 let toutes_les_cartes = [];
 let cartes_jouables = [];
 
+
 // effets bandit
 let effetD_bandit = [PeupleContent, BanqueContent];
 let effetG_bandit = [PeupleContent, MilitaireContent];
 let argD_bandit = [-10, -10];
 let argG_bandit = [5, -20];
-
 
 // effets bonne recolte
 let effetD_bonne_recolte = [PeupleContent];
@@ -77,35 +77,11 @@ let effetG_mauvaise_recolte = [PeupleContent, BanqueContent];
 let argG_mauvaise_recolte = [-10,-10]; //nourire le peuple
 let argD_mauvaise_recolte = [-10,-10]; //nourir la garde
 
-// effets tempete - carte TEST
-let effetD_tempete = [PeupleContent];
-let effetG_tempete = [PeupleContent,BanqueContent];
-let argD_tempete = [NULL];
-let argG_tempete = [NULL];
-
-// effets revolution - carte TEST
-let effetD_revolution = [PeupleContent, MilitaireContent]; // si un effet contient l'ajout d'une carte, il faut le définir après la création de la carte en question
-let effetG_revolution = [PeupleContent];
-let argG_revolution = [NULL];
-let argD_revolution = [NULL];
-
-// effets potion1 - PAS DE FONCTION POUR LE MOMENT
-let effetD_potion1 = [empoisonné];
-let effetG_potion1 = [hallucine];
-let argG_potion1 = [NULL];
-let argD_potion1 = [NULL];
-
 // effets potion 2 
 let effetD_potion2 = [PeupleContent]; //augmente peuple
 let effetG_potion2 = [MilitaireContent]; //augmente armée
 let argG_potion2 = [10];
 let argD_potion2 = [10];
-
-// effets potion 3 - - PAS DE FONTION POUR LE MOMENT
-let effetD_potion3 = [hallucine, empoisonné];
-let effetG_potion3 = [hallucine, empoisonné];
-let argG_potion3 = [NULL];
-let argD_potion3 = [NULL];
 
 // effets chasse
 let effetD_chasse = [PeupleContent]; 
@@ -228,14 +204,10 @@ let argD_tour_guet = [10, -10];
 let argG_tour_guet = [-10];
 
 // on créée les cartes
-const tempete = new carte("Tempete", "Une tempete s'abat sur le pays", "Aider le peuple", "Se cacher", effetD_tempete, effetG_tempete, argD_tempete, argG_tempete, "./monroe.jpg");
-const revolution = new carte("Révolution", "Le peuple se revolte", "Laisser l'armée gerer", "Ecouter leurs revendication", effetD_revolution, effetG_revolution, argD_revolution, argG_revolution, "./Famous-people-minimalism-04.jpg");
 const bonne_recolte = new carte("Bonnes récoltes", "Bonne nouvelle ! Les récoltes ont été fructueuses votre altesse. Nous pourrions en faire profiter le peuple, ou entreposer les excédents pour nous constituer des réserves.", "Nourire le peuple", "Garder les recoltes pour soit", effetD_bandit, effetG_bandit, argD_bandit, argG_bandit, "./Famous-people-minimalism-04.jpg");
 const bandit = new carte("Bandits", "Un groupe de bandits pille nos terres et terrorise notre peuple. Nous devons envoyer notre armée !", "Ne rien faire.", "Envoyer l'armée pour arréter les bandits", effetD_bonne_recolte, effetG_bonne_recolte, argD_bonne_recolte, argG_bonne_recolte, "./maradona.jpg");
 const mauvaise_recolte = new carte("Mauvaises récoltes", "Monseigneur ! Les récoltes sont mauvaises cette année... Nous pourrions donner moins de pain au peuple ou réduire les rations de la garde, mais il faut choisir.", "Nourrir le peuple", "Nourrir la garde", effetD_mauvaise_recolte, effetG_mauvaise_recolte, argD_mauvaise_recolte, argG_mauvaise_recolte, "./monroe.jpg");
 const potion2 = new carte("Potion 2", "Souhaiteriez-vous être un leader charismatique monseigneur ? Ou préférez-vous une force surhumaine ? J'ai justement deux potions pour ça...", "Devenir un leader carismatique", "Avoir une force surhumaine", effetD_potion2, effetG_potion2, argD_potion2, argG_potion2, "./maradona.jpg");
-const potion1 = new carte("Potion 1", "Cher roi, j'ai préparé deux potions pour vous, laquelle désirez-vous boire ?", "Choisir la potion rouge", "Choisir la potion bleu", effetD_potion1, effetG_potion1, argD_potion1, argG_potion1, "./maradona.jpg");
-const potion3 = new carte("Potion 3", "Monseigneur, j'ai ici deux potions. L'une pourrait faire disparaître à jamais la marque du temps de votre corps, et l'autre pourrait vous transformer en chien. Choisissez attentivement.", "Choisir la potion de droite", "Choisir la potion de gauche", effetD_potion3, effetG_potion3, argD_potion3, argG_potion3, "./Famous-people-minimalism-04.jpg");
 const chasse = new carte("Chasse", "La chasse est un succès monseigneur ! Souhaitez-vous organiser un banquet pour célébrer l'occasion ? Nous pourrions inviter le peuple afin d'améliorer votre image ou plutôt le réserver à la bourgeoisie des pays voisins.", "Inviter le peuple", "Inviter la bourgeoisie étrangère", effetD_chasse, effetG_chasse, argD_chasse, argG_chasse, "./Famous-people-minimalism-04.jpg");
 const dragon = new carte("Dragon", "Un dragon sévit dans les montagnes au Nord. Nous devons le chasser ! Nous pourrions demander de l'aide à l'Elgise en déclarant le dragon comme une créature maléfique. Elle se chargerait de former une armée de croisés, mais notre peuple en pâtirait.", "Demander l'aide de l'Eglise", "Envoyer l'armée", effetD_dragon, effetG_dragon, argD_dragon, argG_dragon, "./Famous-people_minimalism-04.jpg");
 const guerre = new carte("Guerre", "Des rapports de nos espions nous informent que la nation voisine renforçait dangereusement son armée près de notre frontière. Nous pourrions leur déclarer la guerre de manière préventive au risque de fragiliser notre propre armée, ou essayer de parlementer.", "Déclarer la guerre", "Parlementer", effetD_guerre, effetG_guerre, argD_guerre, argG_guerre, "./Famous-people_minimalism-04.jpg");
