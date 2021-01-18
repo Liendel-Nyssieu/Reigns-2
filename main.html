@@ -7,24 +7,19 @@
     <script onload type='text/javascript' src='Cartes.js'></script>
     <script onload type='text/javascript' src='Boucle de jeu.js'></script>
     <title>Reigns 2</title>
-    
 </head>
 <body>
 <main>
     <div class="container">
         <div class="meter-container">
-            <div class="meter">
-                <div class="progress" id="religion"></div>
-            </div>
-            <div class="meter">
-                <div class="progress" id="army"></div>
-            </div>
-            <div class="meter">
-                <div class="progress" id="population"></div>
-            </div>
-            <div class="meter">
-                <div class="progress" id="bank"></div>
-            </div>
+            <label for="bank">Banque :</label>
+            <meter id="bank"  min="0"value="90" max="100"></meter> 
+            <label for="army">Armée :</label>
+            <meter id="army" min="0" value="78" max="100"></meter>
+            <label for="people">Peuple :</label>
+            <meter id="people" min="0" value="22" max="100"></meter>
+            <label for="religion">Religion :</label>
+            <meter id="religion" min="0" value="57" max="100"></meter>            
         </div>
         <div class="titre">
             <h2 id="titre">Titre de l'image</h2>
@@ -39,7 +34,6 @@
         <div class="container-description">
             <h2 id="description">Description de l'image</h2>
         </div>
-    </div>
 </main>
 </body>
 </html>

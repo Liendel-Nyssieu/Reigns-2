@@ -1,6 +1,11 @@
+
+
 html,main {
-    background-color: darkslategray;
     height: 100%;
+    background-image: url(./theone.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .container {
     height: 100%;
@@ -11,12 +16,37 @@ html,main {
 }
 
 .meter-container{
+    background-color: transparent;
+    position: absolute;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 300px;
-    height: 100px;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    height: 250px;
+    margin-left: 65%;
 }
+
+label{
+    color: white;
+    font-style: oblique;
+}
+
+#bank::-webkit-meter-optimum-value{
+    background: yellow;
+}
+
+#army::-webkit-meter-optimum-value{
+    background: rgb(70, 63, 6);
+}
+
+#people::-webkit-meter-optimum-value{
+    background: lightcoral;
+}
+
+#religion::-webkit-meter-optimum-value{
+    background: lightslategray;
+}
+
 
 .item{
     width: 300px;
@@ -78,47 +108,40 @@ img{
 }
 
 .right:hover{
-    background-color: blue;
-    box-shadow: -150px 0px blue;
+    background-color: black;
+    box-shadow: -160px 0px black;
+    opacity: 0.9;
     color: white;
 }
 .left:hover {
-    background-color: red;
-    box-shadow: 150px 0px red;
+    background-color: black;
+    box-shadow: 160px 0px black;
+    opacity: 0.9;
     color: white;
 }
 
-.meter {
-    width: 10px;
-    height: 90px;
-    background-color: darkgray;
+meter {
+    width: 100px;
+    height: 20px;
     border-radius: 25px;
     position: relative;
 }
 
-.progress{
-    position:absolute;
-    border-radius: 25px;
-    width: 100%;
-    bottom: 0px;
+
+.container-description{
+    max-width: 50%;
+
 }
 
-#religion{
-    height: 40%;
-    background-color:white;
+.titre-text{
+    color: white;
+    font-style: italic;
 }
 
-#population{
-    height: 25%;
-    background-color: brown;
-}
-
-#bank{
-    height: 70%;
-    background-color: goldenrod;
-}
-
-#army{
-    height: 95%;
-    background-color: green;
+.description-text{
+    color : white;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-variant: small-caps;
+    font-style: oblique;
 }
