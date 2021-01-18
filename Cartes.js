@@ -230,6 +230,6 @@ const taverne = new carte("Construction d'une taverne", "Le peuple s'ennuie mons
 const tour_guet = new carte("Construction d'une tour de guet", "Nous subissons trop souvet des incursions des pays voisins ou des barbares qui profitent d'une faible sécurité aux frontières pour les traverser. Nous devrions construire des tours de guet afin de surveiller les limites de notre territoire.", "Construire une tour de guet", "Ne rien construire", effetD_tour_guet, effetG_tour_guet, argD_tour_guet, argG_tour_guet, "./Famous-people-minimalism-04.jpg");
 
 
-toutes_les_cartes = [bandit, bonne_recolte, mauvaise_recolte,chasse, dragon, guerre, investissement, peche, relique, troubadour, trahison_general];
-cartes_jouables = [bonne_recolte, mauvaise_recolte, bandit, chasse, dragon, guerre, investissement, peche, relique, troubadour, trahison_general];
+toutes_les_cartes = [bandit, bonne_recolte, mauvaise_recolte,chasse, dragon, guerre, investissement, peche, relique, troubadour, trahison_general, barbares, voleur, joutes, gisement, academie_magie, banque, cachots, caserne, cathedrale, grenier, taverne, tour_guet];
+cartes_jouables = [bonne_recolte, mauvaise_recolte, bandit, chasse, dragon, guerre, investissement, peche, relique, troubadour, trahison_general, barbares, voleur, joutes, gisement, academie_magie, banque, cachots, caserne, cathedrale, grenier, taverne, tour_guet];
 const nbcartestotales = toutes_les_cartes.length;
